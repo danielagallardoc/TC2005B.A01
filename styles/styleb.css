@@ -1,0 +1,171 @@
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #feefef;
+    color: #333;
+}
+  
+header {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+  
+.titles h1{
+    font-size: 2em;
+    color: #000;
+}
+  
+.titles h2{
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 0.5em; 
+}
+  
+.search-bar{
+    order: -1;
+    width: 100%; 
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+  
+.search-bar input[type="search"] {
+    padding: 10px;
+    margin-right: 20px;
+}
+  
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+  
+nav .links, nav .icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0 10px; 
+    justify-content: center; 
+  
+}
+  
+.links li a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+    
+.icons i {
+    font-size: 24px; 
+}
+  
+    
+.icons li {
+    padding: 0 10px;
+}
+    
+.contenido {
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px;
+    width: 100%; 
+    height: auto;
+
+  
+}
+  
+.image-container {
+    display: flex;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+    
+.image-container h3 {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+    
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+
+.text-content{
+    display: flex;
+    width:100%;
+    margin-right: 0%;
+    flex-direction: column;
+    text-align:left;
+}
+  
+.left-side{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    margin: auto; 
+    max-width: 1200px
+      
+}
+  
+  .right-side{
+      margin-right: 150px;
+  }
+
+  .img-side-size{
+    height: 200px;
+    width: 170px;
+  }
+
+  .text-article {
+    
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .image-cont{
+    display:flex;
+    flex-direction: row;
+  }
+ 
+  
+
+  .container-text-news{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+  }
+
+  .cont-column{
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+ 
+
+
+  
+  
+  

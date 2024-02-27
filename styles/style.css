@@ -1,0 +1,135 @@
+
+body{
+  background-color: rgb(214, 213, 213);
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px; 
+}
+
+.logo-container h3 {
+  margin-left: 10px; 
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+.links, .icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  
+}
+
+.links {
+  justify-content: center;
+  flex-grow: 1; 
+  padding: 0 5%;
+}
+
+.links li, .icons li {
+  padding: 0 10px;
+}
+
+.icons {
+  margin-left: auto; 
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.rectangles_container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+
+.rectangle{
+  background-color: #ff0066;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 45px;
+}
+
+.text_container{
+  max-width: 60%;
+}
+
+.rectangle_image{
+  height: auto; 
+  width: auto; 
+  max-width: 60%; 
+  border-radius: 20px; 
+}
+
+aside img{
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 20px
+}
+
+.rectangle h1{
+  font-size: 45px;
+  margin-top: auto;
+}
+
+.jobs_rectangle, .img_rectangle {
+  background-color: #837d7f;
+  color: white;
+  border-radius: 30px;
+  padding: 50px;
+  width: calc(50% - 15px); 
+  margin-bottom: 30px;
+}
+
+.jobs_rectangle h3{
+  font-size: 40px;
+  margin: 0;
+}
+
+.jobs_rectangle img{
+  margin-left: 380px;
+  height: 160px;
+  width: 160px;
+}
+
+.jobs_rectangle p{
+  font-size: 32px;
+}
+
+
+

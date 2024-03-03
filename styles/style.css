@@ -1,5 +1,6 @@
+/* Base styles */
 
-body{
+body {
   background-color: rgb(214, 213, 213);
   font-family: 'Arial', sans-serif;
 }
@@ -17,11 +18,11 @@ header {
 }
 
 .logo {
-  height: 60px; 
+  height: 60px;
 }
 
-.logo-container h3 {
-  margin-left: 10px; 
+.logo_container h3 {
+  margin-left: 10px;
 }
 
 nav {
@@ -29,12 +30,11 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  
 }
 
 a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 .links, .icons {
@@ -43,12 +43,11 @@ a {
   display: flex;
   margin: 0;
   align-items: center;
-  
 }
 
 .links {
   justify-content: center;
-  flex-grow: 1; 
+  flex-grow: 1;
   padding: 0 5%;
 }
 
@@ -57,52 +56,46 @@ a {
 }
 
 .icons {
-  margin-left: auto; 
+  margin-left: auto;
 }
 
-
-main{
+main {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
 
-.rectangles_container{
+.rectangles_container {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   gap: 30px;
 }
 
-
-.rectangle{
+.rectangle {
   background-color: #ff0066;
   border-radius: 30px;
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 45px;
 }
 
-.text_container{
+.text_container {
   max-width: 60%;
 }
 
-.rectangle_image{
-  height: auto; 
-  width: auto; 
-  max-width: 60%; 
-  border-radius: 20px; 
+.rectangle_image, 
+aside img, 
+.jobs_rectangle img, 
+.img_rectangle img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
-aside img{
-  max-width: 100%; 
-  height: auto; 
-  border-radius: 20px
-}
-
-.rectangle h1{
+.rectangle h1 {
   font-size: 45px;
   margin-top: auto;
 }
@@ -111,25 +104,99 @@ aside img{
   background-color: #837d7f;
   color: white;
   border-radius: 30px;
-  padding: 50px;
-  width: calc(50% - 15px); 
-  margin-bottom: 30px;
+  padding: 20px; /* Adjust padding */
+  width: calc(50% - 20px); /* Adjust the width to account for the gap */
+  margin-bottom: 20px; /* Add margin for spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
 }
 
-.jobs_rectangle h3{
+.jobs_rectangle img, .img_rectangle img {
+  max-width: 100%; /* Ensure images are responsive and scale within the container */
+  height: auto;
+  display: block; /* Images should take up the full width of their container */
+  margin-bottom: 10px; /* Space between the image and text */
+}
+
+.jobs_rectangle h3 {
   font-size: 40px;
   margin: 0;
 }
 
-.jobs_rectangle img{
-  margin-left: 380px;
-  height: 160px;
-  width: 160px;
-}
-
-.jobs_rectangle p{
+.jobs_rectangle p {
   font-size: 32px;
 }
 
+/* Responsive styles */
 
+@media (max-width: 767.98px) {
+  header, nav, .logo_container, .links, .icons {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo_container, .links, .icons {
+    flex-direction: column;
+  }
+
+  .links li, .icons li {
+    padding: 5px 0; /* Reduce padding */
+  }
+
+  .rectangle {
+    /* Stack the title and image vertically and center them */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rectangle h1, .rectangle p {
+    /* Ensure text takes full width and is centered */
+    width: 100%;
+  }
+
+  .rectangle_image {
+    /* Adjust image size if necessary and center it */
+    width: 80%; /* Example size, adjust as needed */
+    height: auto;
+    margin-top: 20px; /* Add some space above the image */
+  }
+
+  .rectangles_container {
+    flex-direction: column;
+  }
+
+  .rectangle_image, .jobs_rectangle img, .img_rectangle img {
+    max-width: 100%; /* Ensure images are not larger than their containers */
+    height: auto;
+    margin: 0 auto; /* Center images */
+  }
+
+  .jobs_rectangle, .img_rectangle {
+    width: 100%; /* Full width for small screens */
+  }
+
+  .jobs_rectangle img, .img_rectangle img {
+    max-width: 80%; /* Scale down the images to fit within their containers on small screens */
+    margin: 0 auto; /* Center the images */
+  }
+
+  .jobs_rectangle h3, .jobs_rectangle p, .img_rectangle p {
+    text-align: center; /* Center-align text for readability on small screens */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .rectangles_container {
+    flex-direction: row;
+  }
+}
+
+/* Large devices (desktops, 1080px and up) */
+@media (min-width: 1080px) {
+  .rectangles_container {
+    justify-content: space-evenly;
+  }
+}
 
